@@ -1,7 +1,7 @@
-// import { AccessRoutes } from './app/rbac/access.routes';
 import mongoose from 'mongoose';
 import express, { Request, Response, NextFunction, Express } from 'express';
 import { config } from 'dotenv';
+import cors from 'cors'; // Import the cors middleware
 import BlogRoutes from './src/app/blog/blog.routes'; // Correct import without .js extension
 import * as z from 'zod';
 
@@ -33,6 +33,9 @@ main();
 
 // Middleware to parse JSON requests
 app.use(express.json());
+
+// Enable CORS
+app.use(cors()); // Add this middleware to enable CORS for all origins
 
 // Modular Routes
 app.use('/blogs', new BlogRoutes().router);
