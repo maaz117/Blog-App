@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    /* Language and Environment */
+    "target": "es2020",                          /* Use ES2020 as the target to enable modern JavaScript features */
+    "module": "Node16",                          /* Changed from 'commonjs' to 'Node16' to support package.json exports */
+    "moduleResolution": "node16",                /* 'node16' is required to support the 'exports' field in package.json */
+    "esModuleInterop": true,                     /* Allows default imports from modules that don't have a default export */
+    "skipLibCheck": true,                        /* Skip type checking for declaration files */
+    "forceConsistentCasingInFileNames": true,    /* Ensure consistent casing of filenames */
+    "strict": true,                              /* Enable all strict type-checking options */
+    "outDir": "./dist",                          /* Output the compiled files to the `dist` folder */
+    "rootDir": "./src",                          /* All source files are inside the `src` folder */
+    "resolveJsonModule": true,                   /* Enable importing of JSON files */
+    "allowJs": true,                             /* Allow JavaScript files to be part of your project */
+    "skipDefaultLibCheck": true,                 /* Skip default lib checks (useful for large projects) */
+    "noEmitOnError": true,                       /* Don't emit output if there are type errors */
+    "downlevelIteration": true,                  /* Ensure that iterators are downlevel-compatible */
+    "noImplicitAny": true,                       /* Enable error reporting for `any` types */
+    "noUnusedLocals": true,                      /* Report unused local variables */
+    "noUnusedParameters": true,                  /* Report unused function parameters */
+    "noImplicitReturns": true,                   /* Ensure all functions have explicit return types */
+    "noFallthroughCasesInSwitch": true,          /* Ensure switch statements have explicit fallthrough */
+    "strictNullChecks": true,                    /* Ensure null and undefined are handled safely */
+    "exactOptionalPropertyTypes": true,          /* Ensure optional properties are treated as they are */
+    "resolvePackageJsonExports": true,           /* Use the `exports` field in `package.json` when resolving imports */
+    "declaration": true,                         /* Generate `.d.ts` declaration files for all modules */
+    "declarationMap": true,                      /* Generate source maps for declaration files */
+    "sourceMap": true                            /* Generate source maps for JavaScript output */
+  },
+  "include": [
+    "src/**/*"                                   /* Include all `.ts` files from the `src` folder */
+  ],
+  "exclude": [
+    "node_modules"                               /* Exclude `node_modules` folder from the compilation */
+  ]
+}
